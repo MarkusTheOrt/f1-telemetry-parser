@@ -2,28 +2,24 @@
   "name": "f1-telemetry-parser",
   "version": "1.0.0",
   "description": "Parses F1 Telemetry data from the F1 Live-Timing App into usable JSON data",
-  "main": "src/main.js",
-  "scripts": {
-    "dev": "rollup -c -w",
-	"build": "rollup -c && web-ext build --source-dir public --overwrite-dest"
-  },
+  "main": "src/main.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/MarkusTheOrt/f1-telemetry-parser.git"
   },
   "bugs": {
-	"url": "https://github.com/MarkusTheOrt/f1-telemetry-parser/issues"
+    "url": "https://github.com/MarkusTheOrt/f1-telemetry-parser/issues"
   },
   "keywords": [
     "F1",
     "Telemetry",
     "F1TelemetryParser"
   ],
-  "devDependencies": {
-	"archiver": "^3.1.1",
-	"rollup": "^1.23.1",
-	"web-ext": "^3.2.0"
-  },
   "author": "Markus Ort",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "utf8": "^3.0.0",
+    "zlibjs": "^0.3.1"
+  }
 }
